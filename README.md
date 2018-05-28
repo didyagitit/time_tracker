@@ -2,7 +2,8 @@
 
 ### Setup Backend
 
-The backend was built with Ruby on Rails. The database is MySQL.
+The backend was built with Ruby on Rails. The database is MySQL. Here are some
+tutorials on how to install Ruby and Rails in Ubuntu: [text link with title](https://gorails.com/setup/ubuntu/16.04#ruby "Ruby") and [text link with title](https://gorails.com/setup/ubuntu/16.04#rails "Rails").
 
 ```bash
 cd backend
@@ -87,5 +88,6 @@ npm test
 ### Which parts would need improvement?
 
 - Frontend Server for production;
+- Display error messages when Booking Time with incorrect parameters;
 - Please see reply to 'What would you do differently if you had more time?' for
   more.
