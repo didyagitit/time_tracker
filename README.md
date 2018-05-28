@@ -3,7 +3,7 @@
 ### Setup Backend
 
 The backend was built with Ruby on Rails. The database is MySQL. Here are some
-tutorials on how to install Ruby and Rails in Ubuntu: [text link with title](https://gorails.com/setup/ubuntu/16.04#ruby "Ruby") and [text link with title](https://gorails.com/setup/ubuntu/16.04#rails "Rails").
+tutorials on how to install Ruby and Rails in Ubuntu: [Ruby](https://gorails.com/setup/ubuntu/16.04#ruby "Ruby") and [Rails](https://gorails.com/setup/ubuntu/16.04#rails "Rails").
 
 ```bash
 cd backend
