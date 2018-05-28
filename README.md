@@ -18,7 +18,10 @@ Create and populate MySQL Database
 bin/rails db:create
 bin/rails db:migrate
 bin/rails db:seed
+```
+Start the backend server
 
+```bash
 bin/rails s
 ```
 
