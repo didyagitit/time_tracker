@@ -2,6 +2,8 @@
 
 ### Setup Backend
 
+The backend was built with Ruby on Rails. The database is MySQL.
+
 ```bash
 cd backend
 ```
