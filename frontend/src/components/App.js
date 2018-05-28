@@ -14,7 +14,6 @@ class App extends React.Component {
   constructor() {
     super();
 
-    this._searchMode = false;
     this.state = Object.assign(
       settings.DEFAULT_STATE,
       settings.DEFAULT_PAGINATION,
