@@ -1,24 +1,32 @@
-# README
+# Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Install all gems
 
-Things you may want to cover:
+```bash
+bundle install
+```
 
-* Ruby version
+Initialize environment variables for MySQL Database
 
-* System dependencies
+```bash
+export RAILS_DATABASE_USERNAME=<your mysql username>
+export RAILS_DATABASE_PASSWORD=<your mysql password>
+```
+Create and populate MySQL Database
 
-* Configuration
+```bash
+bin/rails db:create
+bin/rails db:migrate
+bin/rails db:seed
+```
+Start the backend server
 
-* Database creation
+```bash
+bin/rails s
+```
 
-* Database initialization
+### Run tests
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bundle exec rspec
+```
