@@ -1,11 +1,6 @@
-Time Tracker
-==============
+# Time Tracker
 
-Usage
------
-
-Setup Backend
-=============
+### Setup Backend
 
 ```bash
 cd backend
@@ -27,8 +22,7 @@ bin/rails db:seed
 bin/rails s
 ```
 
-Setup Frontend
-==============
+### Setup Frontend
 
 ```bash
 # If you are following the previous steps
@@ -49,8 +43,7 @@ Run webpack-dev-server
 npm run start:dev
 ```
 
-Run Tests
-=========
+### Run Tests
 
 For Backend
 
