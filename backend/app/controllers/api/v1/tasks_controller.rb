@@ -6,7 +6,7 @@ module Api::V1
       tasks = tasks_query
       count = tasks_query.count
 
-      render json: { tasks: tasks, count: count}
+      render json: { tasks: tasks, count: count }
     end
 
     def create
