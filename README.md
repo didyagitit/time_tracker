@@ -84,4 +84,6 @@ npm test
 
 ### Which parts would need improvement?
 
-- Please see reply to 'What would you do differently if you had more time?'.
+- Frontend Server for production;
+- Please see reply to 'What would you do differently if you had more time?' for
+  more.
