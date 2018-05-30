@@ -5,7 +5,6 @@ import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({adapter: new Adapter()});
 
 import TasksList from './TasksList';
-import Task from './Task';
 
 describe('<TasksList />', () => {
   it('renders a collection of <Task /> components', () => {

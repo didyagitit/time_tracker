@@ -7,12 +7,11 @@ export function formatDigitsForDisplay(digit) {
 }
 
 export function formatDate(currentDate) {
-  var today = new Date();
-  var day = formatDigitsForDisplay(today.getDate());
-  var month = formatDigitsForDisplay(today.getMonth() + 1);
-  var year = today.getFullYear();
-  var hours = formatDigitsForDisplay(today.getHours());
-  var minutes = formatDigitsForDisplay(today.getMinutes());
+  var day = formatDigitsForDisplay(currentDate.getDate());
+  var month = formatDigitsForDisplay(currentDate.getMonth() + 1);
+  var year = currentDate.getFullYear();
+  var hours = formatDigitsForDisplay(currentDate.getHours());
+  var minutes = formatDigitsForDisplay(currentDate.getMinutes());
 
   return `${day}/${month}/${year} ${hours}:${minutes}`;
 }

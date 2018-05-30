@@ -3,7 +3,6 @@ import Enzyme, {shallow, mount} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import sinon from 'sinon';
 
 Enzyme.configure({adapter: new Adapter()});
 
@@ -11,7 +10,6 @@ import App from './App';
 import TimeBooker from './TimeBooker';
 import TasksList from './TasksList';
 import TasksSearch from './TasksSearch';
-import Task from './Task';
 import * as settings from './../default_settings/default_settings';
 
 var mock = new MockAdapter(axios);

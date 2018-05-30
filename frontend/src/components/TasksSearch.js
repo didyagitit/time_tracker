@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class TasksSearch extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -26,5 +27,9 @@ class TasksSearch extends React.Component {
     );
   }
 }
+
+TasksSearch.propTypes = {
+  onSearch: PropTypes.func.isRequired
+};
 
 export default TasksSearch;

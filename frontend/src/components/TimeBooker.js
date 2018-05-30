@@ -1,5 +1,6 @@
 import React from 'react';
 import { formatDate } from './../utils/utils';
+import PropTypes from 'prop-types';
 
 class TimeBooker extends React.Component {
   constructor(props) {
@@ -50,5 +51,10 @@ class TimeBooker extends React.Component {
     );
   }
 }
+
+TimeBooker.propTypes = {
+  currentTime: PropTypes.object.isRequired,
+  onBooking: PropTypes.func.isRequired  
+};
 
 export default TimeBooker;

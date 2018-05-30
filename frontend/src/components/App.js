@@ -3,7 +3,6 @@ import TimeBooker from './TimeBooker';
 import TasksList from './TasksList';
 import TasksSearch from './TasksSearch';
 import axios from 'axios';
-import update from 'immutability-helper';
 import Pagination from 'react-js-pagination';
 import { formatDigitsForDisplay } from './../utils/utils';
 import * as settings from './../default_settings/default_settings';
@@ -53,21 +52,21 @@ class App extends React.Component {
         } else {
           this.setState(newState);
         }
-      }).catch(error => console.log(error));
+      });
   }
 
   addNewTask(newTask) {
-    axios.post(`${settings.API_HOST}/api/v1/tasks`, newTask
-      ).then(response => {
-        const params = { params: {
-            search: this.state.search,
-            page: this.state.page,
-            per_page: this.state.itemsCountPerPage
-          }
-        };
+    axios.post(`${settings.API_HOST}/api/v1/tasks`, newTask).then(() => {
+      const params = {
+        params: {
+          search: this.state.search,
+          page: this.state.page,
+          per_page: this.state.itemsCountPerPage
+        }
+      };
 
-        this.getTasks(params, true);
-      }).catch(error => console.log("error", error));
+      this.getTasks(params, true);
+    });
   }
 
   handleStartButton() {
@@ -88,8 +87,8 @@ class App extends React.Component {
       {
         search: this.state.search,
         tasks: this.state.tasks,
-        totalItemsCount: state.totalItemsCount,
-        page: state.page
+        totalItemsCount: this.state.totalItemsCount,
+        page: this.state.page
       }
     ));
   }
@@ -187,7 +186,9 @@ class App extends React.Component {
             totalItemsCount={totalItemsCount}
             pageRangeDisplayed={this.state.pageRangeDisplayed}
             onChange={this.handlePageChange} />
-          ) : ( '' )
+        ) : (
+          ''
+        )
         }
         <TasksList tasks={tasks} />
       </div>

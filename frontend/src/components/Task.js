@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Task = ({task}) => {
   return (
@@ -9,6 +10,10 @@ const Task = ({task}) => {
       <p>Finished at: {task['finished_at']}</p>
     </li>
   );
-}
+};
+
+Task.propTypes = {
+  task: PropTypes.object.isRequired
+};
 
 export default Task;
