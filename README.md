@@ -68,26 +68,3 @@ For Frontend
 ```bash
 npm test
 ```
-
-### Time spent with application
-
-20 hours
-
-### What would you do differently if you had more time?
-
-- Would have used pub/sub to provide a cleaner and self-maintained solution to
-  update state in the application;
-- Add a delay in the search request done to the API;
-- Add proper CSS styling;
-- Add more tests;
-
-### With which parts of the application are you satisfied?
-
-- I like the code organization (components, styles, utils, etc.).
-
-### Which parts would need improvement?
-
-- Frontend Server for production;
-- Display error messages when Booking Time with incorrect parameters;
-- Please see reply to 'What would you do differently if you had more time?' for
-  more.
